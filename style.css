@@ -15,11 +15,11 @@
 
 body {
     text-align: center;
-    max-width: 60%;
-    margin: auto;
+    /* max-width: 60%;
+    margin: auto; */
 }
 
-header, footer, button, a {
+header, footer, a, button {
     background-color: var(--primary-color);
     color: var(--text-color);
 }
@@ -29,8 +29,10 @@ a {
 }
 
 button {
-    padding: 10px 12px;
-    border-radius: 10px;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    border-radius: 1em;
+    font-size: 16;
 }
 
 span {
@@ -42,11 +44,15 @@ header {
     padding: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    justify-content: space-around
+    justify-content: space-around;
+    align-items: center;
 }
 
 .links {
-    margin: 0 10px;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    border-radius: 1em;
+    border: .1em solid black;
 }
 
 .links:hover {
@@ -54,17 +60,17 @@ header {
     transition: all 0.5s ease-in-out;
 }
 
-.active, .active a {
+.active {
     background-color: black;
+}
+
+.intro {
+    padding: 0 5em 2em 5em;
 }
 
 .intro img {
     width: 500px;
     height: 400px;
-}
-
-.intro {
-    padding: 0 5em 2em 5em;
 }
 
 .technologies, .proj, .blog {
@@ -86,60 +92,6 @@ footer {
     border-top-right-radius: 20px;
 }
 
-/* ABOUT ME */
-
-.top {
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.top img {
-    width: 30%;
-    height: 40%;
-}
-
-.top .self {
-    width: 10%;
-    height: 10%;
-}
-
-.top .name {
-    text-align: right;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto;
-    gap: 1em;
-    padding: 1em;
-    /* border-radius: 15px; */
-}
-
-.grid > div {
-    padding: 0.5rem;
-    background-color: rgb(147, 228, 248);
-    /* background-color: white; */
-    align-self: center;
-    border-radius: 10px;
-}
-
-.title {
-    grid-column-start: 1;
-    grid-column-end: 6;
-}
-
-.heading {
-    font-size: large;
-    font-weight: bolder;
-}
-
-#course {
-    grid-template-columns: auto auto auto;
-}
-
 /* PROJECTS  */
 
 .projects {
@@ -148,8 +100,9 @@ footer {
 }
 
 .project {
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding: 2em 15em;
+    /* padding-bottom: 30px;
+    padding-top: 30px; */
 }
 
 .date {
